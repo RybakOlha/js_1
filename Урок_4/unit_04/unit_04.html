@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="https://cabinet.itgid.info/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://itgid.info/css/skeleton.css">
+    <link rel="stylesheet" href="https://itgid.info/css/style_js20.css">
+   
+    <title> Unit 04</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unit 04. Працюємо з формами: input, RANGE, TEXTAREA, CHECKBOX</h1>
+        
+    
+        <section>
+            <p><b>Task 1.</b></p>
+            <p>При натисканні (click) на .b-1 починає працювати f1, яка виводить в .out-1 число 1.</p>
+            <button class="button-primary b-1">Task-1</button>
+            <div class="out-1"></div>
+        </section>
+
+        <section>
+            <p><b>Task 2.</b></p>
+            <p>При натисканні (click) на .i-2 починає працювати f2, яка виводить в .out-2 число 2. Тобто, як бачите, ми можемо повісити клік на будь-який елемент.</p>
+            <input type="text" class="i-2" value="Взагалі не важливо">
+            <div class="out-2"></div>
+        </section>
+
+        <section>
+            <p><b>Task 3.</b></p>
+            <p class="p-3">При натисканні (click) на .p-3 починає роботу f3, яка виводить в .out-3 число 3. Тобто, як бачите, ми можемо повісити клік на будь-який елемент.</p>
+            <div class="out-3"></div>
+        </section>
+
+        <section>
+            <p><b>Task 4.</b></p>
+            <p>При натисканні кнопки .b-4 запускається функція f4. Функція перевіряє стан .i-4 і якщо він checked – виводить true, якщо не вибраний – false. Виведення скрізь у завданнях, де не вказано інше, здійснюється в div.out-номер завдання. У даному випадку – div.out-4
+            </p>
+            <div><label><input type="checkbox" class="i-4"> checkbox i-4</label></div>
+            <button class="button-primary b-4">Task-4</button>
+            <div class="out-4"></div>
+        </section>
+
+        <section>
+            <p><b>Task 5.</b></p>
+            <p>При натисканні кнопки .b-5 запускається функція f5. Функція перевіряє стан .i-5 і якщо він checked – виводить value даного елемента, якщо не вибраний – false. Виведення скрізь у завданнях, де не вказано інше, здійснюється в div.out-номер завдання. У цьому випадку div.out-5</p>
+            <div><label><input type="checkbox" class="i-5" value="task-5"> checkbox i-5</label></div>
+            <button class="button-primary b-5">Task-5</button>
+            <div class="out-5"></div>
+        </section>
+
+        <section>
+            <p><b>Task 6.</b></p>
+            <p>При натисканні на кнопку виведіть значення з input.i-6 в div.out-6. Зверніть увагу, що навіть прихований hidden input – нам не завадить.</p>
+            <input type="hidden" class="i-6" value="8987">
+            <button class="button-primary b-6">Task-6</button>
+            <div class="out-6"></div>
+        </section>
+
+        <section>
+            <p><b>Task 7.</b></p>
+            <p>При натисканні на кнопку виводьте в div.out-71 value, прописане в input .i-7. У .out-72 виводьте 1, якщо довжина пароля більша або дорівнює 6 або 0, якщо менше. Для підрахунку кількості символів у рядку використовуйте length.</p>
+            <input type="password" class="i-7">
+            <button class="button-primary b-7">Task-7</button>
+            <div class="out-71 out-7">Сюди уводимо сам пароль</div>
+            <div class="out-72 out-7">Сюди 1 або 0</div>
+        </section>
+
+        <section>
+            <p><b>Task 8.</b></p>
+            <p>При натисканні кнопки .b-8 запускається функція f8. Функція створює в .out-8 новий div із класом "js2" та текстом "new div"..</p>
+            <button class="button-primary b-8">Task-8</button>
+            <div class="out-8"></div>
+
+        </section>
+
+        <section>
+            <p><b>Task 9.</b></p>
+            <p>При натисканні кнопки .b-9 запускаємо функцію f9. Функція перевіряє checked елементу .r-9. Якщо елемент вибраний (checked) виводить в .out-9 value radiobutton. Якщо не вибраний – виводить false.</p>
+            <div><label><input type="radio" class="r-9" value="6572"> radio r-9</label></div>
+            <button class="button-primary b-9">Task-9</button>
+            <div class="out-9"></div>
+        </section>
+
+        <section>
+            <p><b>Task 10.</b></p>
+            <p>При натисканні кнопки .b-10 запускаємо функцію f10. Функція отримує з .i-10 значення кольору та забарвлює style.background елемента .out-10 у цей колір.
+            </p>
+            <div><label><input type="color" class="i-10"></label></div>
+            <button class="button-primary b-10">Task-10</button>
+            <div class="out-10">out-10</div>
+        </section>
+
+        <section>
+            <p><b>Task 11.</b></p>
+            <p>При натисканні кнопки .b-11 запускається функція f11. Функція отримує колір із .i-111 і присвоює як value елементу .i-112. Тобто, після натискання кнопки кольори у першому та другому input стануть однакові.</p>
+            <div><label><input type="color" class="i-111" value="#34eb43"> input i-111</label></div>
+            <div><label><input type="color" class="i-112"> input i-112</label></div>
+            <button class="button-primary b-11">Task-11</button>
+        </section>
+
+        <section>
+            <p><b>Task 12.</b></p>
+            <p>При натисканні кнопки .b-12 запускається функція f12. Функція виводить дату з .i-12 в out-12.</p>
+            <div><label><input type="date" class="i-12"> input i-12</label></div>
+            <button class="button-primary b-12">Task-12</button>
+            <div class="out-12"></div>
+        </section>
+
+        <section>
+            <p><b>Task 13.</b></p>
+            <p>При зміні положення повзунка .i-13 виводьте його значення в out-13. </p>
+            <div><label><input type="range" class="i-13"> input i-13</label></div>
+            <div class="out-13"></div>
+        </section>
+
+        <section>
+            <p><b>Task 14.</b></p>
+            <p>При натисканні на кнопку виведіть текст із textarea .t-14 в .out-14.</p>
+            <div><textarea class="t-14">Hello, old friend. It's been a while.</textarea></div>
+            <button class="button-primary b-14">Task-14</button>
+            <div class="out-14"></div>
+        </section>
+
+        <section>
+            <p><b>Task 15.</b></p>
+            <p>При натисканні на кнопку .b-15 функція повинна виводити текст з .i-15 у textarea .t-15 та .out-15.</p>
+            <div><label><input type="text" class="i-15"> input i-15</label></div>
+            <button class="button-primary b-15">Task-15</button>
+
+            <div>textarea t-15</div>
+            <div><textarea class="t-15"></textarea></div>
+            <div class="out-15"></div>
+        </section>
+
+        <section>
+            <p><b>Task 16.</b></p>
+            <p>При натисканні на кнопку .b-16 виведіть в .out-16 value вибраного option з .s-16.</p>
+            <div> <label>
+                    <select class="s-16">
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="five">5</option>
+                    </select>
+                    select s-16
+                </label>
+            </div>
+            <button class="button-primary b-16">Task-16</button>
+            <div class="out-16"></div>
+        </section>
+
+        <section>
+            <p><b>Task 17.</b></p>
+            <p>При зміні вибраного значення .s-17 виведіть в .out-17 value вибраного option з .s-17.</p>
+            <div>
+                <label>
+                    <select class="s-17">
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="five">5</option>
+                    </select>
+                    select s-17
+                </label>
+            </div>
+            <div class="out-17"></div>
+        </section>
+
+        <section>
+            <p><b>Task 18.</b></p>
+            <p> При зміні вибраного значення s-18, отримайте з нього value вибраного option і передайте даний value в input .i-18.</p>
+            <div>
+                <label>
+                    <select class="s-18">
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="five">5</option>
+                    </select>
+                    select s-18
+                </label>
+                <div><label><input type="text" class="i-18"> input i-18</label></div>
+            </div>
+        </section>
+
+        <section>
+            <p><b>Task 19.</b></p>
+            <p>На сторінці створено div.out-19. Після натискання кнопки, отримайте з нього текст і надайте у value елемента .i-19.</p>
+            <div><label><input type="text" class="i-19"> input i-19</label></div>
+            <button class="button-primary b-19">Task-19</button>
+            <div class="out-19">ECMAScript</div>
+
+
+        </section>
+
+        <section>
+            <p><b>Task 20.</b></p>
+            <p>Ви маєте два select. Напишіть код, який при зміні select .s-201 аналогічно змінюватиме вибраний option в .s-202.</p>
+            <label>
+                <select class="s-201">
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="five">5</option>
+                </select>
+                select s-201
+            </label>
+            <label>
+                <select class="s-202">
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="five">5</option>
+                </select>
+                select s-202
+            </label>
+        </section>
+       
+    </div>
+
+    <script src="unit_04.js"></script>
+</body>
+
+</html>

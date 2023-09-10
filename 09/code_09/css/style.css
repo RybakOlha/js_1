@@ -1,0 +1,73 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+.text-center {
+    text-align: center;
+}
+
+.one {
+    background: bisque;
+}
+
+.two {
+    background: orange;
+}
+
+.three {
+    border: 2px solid red;
+}
+
+.append{
+    background: forestgreen;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.base{
+    background: rgb(141, 193, 141);
+    margin: 10px;
+    padding: 20px;
+}
+
+.middle{
+    background: rgb(232, 50, 13);
+    margin: 10px;
+    padding: 10px;
+}
+
+.prepend{
+    background: rgb(180, 133, 40);
+    margin: 10px;
+    padding: 10px;
+}
+
+.before{
+    background: rgb(213, 109, 171);
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.after{
+    background: rgb(113, 83, 220);
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+.replaceWith{
+    background: rgb(160, 29, 29);
+    margin: 10px;
+    padding: 10px;
+
+}

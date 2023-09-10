@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="https://cabinet.itgid.info/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://itgid.info/css/skeleton.css">
+    <link rel="stylesheet" href="https://itgid.info/css/style_js20.css">
+    <title>JS  Unit 07</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unit 07. Функції</h1>
+        <h2></h2>
+        
+        <section>
+            <p><b>Task 1.</b></p>
+            <p>Напишіть функцію t1, яка при натисканні кнопки виводить у .out-1 змінну a1.</p>
+            <p class="cd">
+                let a1 = 8;<br>
+                function t1() {<br>
+                }<br>
+                document.querySelector('.b-1').onclick = t1;  <br>              
+            </p>
+            <button class="button-primary b-1">Task-1</button>
+            <div class="out-1"></div>
+        </section>
+
+        <section>
+            <p><b>Task 2.</b></p>
+            <p>Змінимо завдання 1. Зараз функція лише виводить змінну в заданий блок. Давайте зробимо так, щоб функція була більш гнучкою. Нехай тепер t2 повертає (return) змінну a2. Оскільки функція повертає змінну, то ім'я функції з дужками (виклик функції) можна вбудовувати у вирази. Зверніть увагу, як тепер змінюється виклик функції.
+            </p>
+            <p class="cd">
+                let a2 = 8;<br>
+                function t2() {<br>
+                &nbsp;// тут ваш код <br>
+                }<br>
+                document.querySelector('.b-2').onclick = function() {<br>
+                &nbsp;document.querySelector('.out-2').textContent = f2();<br>
+                }<br>
+                          
+            </p>
+            <button class="button-primary b-2">Task-2</button>
+            <div class="out-2"></div>
+        </section>
+
+        <section>
+            <p><b>Task 3.</b></p>
+            <p>Наша попередня функція, все ще сильно залежна від зовнішніх змінних. Давайте зробимо її універсальнішою. Нехай функція t3 приймає 2 аргументи та повертає (return) їх добуток. Допишіть код функції так, щоб вона повертала добуток двох чисел, переданих їй як аргументи a, b. Протестуємо функцію на двох прикладах, за допомогою кнопок .b-3-1 та .b-3-2.
+            </p>
+            <p class="cd">
+                function t3(a,b) {<br>
+
+                }<br>
+                document.querySelector('.b-3-1').onclick =  function(){<br>
+                &nbsp; document.querySelector(''.out-3-1').textContent = t3(3,4);<br>
+                }<br>
+                document.querySelector('.b-3-2').onclick =  function(){<br>
+                &nbsp;document.querySelector('.out-3-2').textContent = t3(5,6);<br>
+                }<br>
+                
+                          
+            </p>
+            <button class="button-primary b-3-1">button 3-1</button>
+            <button class="button-primary b-3-2">button 3-2</button>
+            <div class="out-3-1"></div>
+            <div class="out-3-2"></div>
+        </section>
+
+        <section>
+            <p><b>Task 4.</b></p>
+            <p>Напишіть функцію t4, яка приймає ваш рік народження і обчислює (повертає) ваш вік.</p>
+            <button class="button-primary b-4">Task-4</button>
+            <div class="out-4"></div>
+        </section>
+
+        <section>
+            <p><b>Task 5.</b></p>
+            <p>Напишіть функцію t5, яка приймає ваше ім'я як параметр і повертає (return) число символів у ньому, де name - прийняте як параметр ім'я. Довжину (число символів) можна визначити за допомогою властивості .length.</p>
+            <button class="button-primary b-5">Task-5</button>
+            <div class="out-5"></div>
+        </section>
+
+        <section>
+            <p><b>Task 6.</b></p>
+            <p>Напишіть функцію t6, яка приймає 2 числа та повертає випадкове ціле число від першого до другого прийнятого параметра.
+            </p>
+            <button class="button-primary b-6">Task-6</button>
+            <div class="out-6"></div>
+        </section>
+
+        <section>
+            <p><b>Task 7.</b></p>
+            <p>Напишіть функцію t7, яка повертає випадковий колір у форматі rgb(x,y,z)(рядок). Де x, y, z – випадкові числа в діапазоні [0, 255].
+            </p>
+            <button class="button-primary b-7">Task-7</button>
+            <div class="out-7">Цей блок змінює колір</div>
+        </section>
+
+        <section>
+            <p><b>Task 8.</b></p>
+            <p>Напишіть функцію t8, яка приймає рядок як параметр і повертає результат з очищеними пробілами на початку та в кінці рядка. Тобто приймає _hello_(де знак _ символізує прогалину), а повертає hello. Для видалення пробілів – використовуйте функцію trim.
+            </p>
+            <button class="button-primary b-8">Task-8</button>
+            <div class="out-8">У цій задачі вивід результату у консоль!</div>
+        </section>
+
+        <section>
+            <p><b>Task 9.</b></p>
+            <p>Напишіть функцію t9, яка приймає число та повертає true, якщо число парне, і false якщо не парне.
+            </p>
+            <button class="button-primary b-9">Task-9</button>
+            <div class="out-9"></div>
+        </section>
+
+        <section>
+            <p><b>Task 10.</b></p>
+            <p>Створіть функцію t10, яка приймає 2 числа і повертає більше їх.У разі рівності - перше.
+            </p>
+            <button class="button-primary b-10">Task-10</button>
+            <div class="out-10"></div>
+        </section>
+        <p></p>
+
+    </div>
+
+    <script src="unit_07.js"></script>
+</body>
+
+</html>
