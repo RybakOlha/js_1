@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/mustard-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Unit 11</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unit 11. Додавання та видалення елементів масивів, pop, push,splice</h1>
+        
+
+        <section>
+            <p><b>Task 1.</b></p>
+            <p>Існує масив d1, кнопка b-1, input i-1. Напишіть функцію f1, яка при натисканні читає i-1 і додає його у кінець масиву d1. Після чого виводить масив у .out-1. Оскільки ми виводитимемо масив d1 неодноразово, то давайте виведення масиву зробимо окремою функцією, showArr - вона підготовлена. Вивчіть її – це хороший спосіб оптимізувати код.</p>
+            <pre>
+         d1 = [33,'best', 66, 'best'];
+        </pre>
+            <div class="form-control">Input i-1 <input type="text" class="i-1"></div>
+            <button class="button-primary b-1">Task-1</button>
+            <div class="out-1"></div>
+        </section>
+
+        <section>
+            <p><b>Task 2.</b></p>
+            <p>Напишіть функцію f2, яка застосовує метод pop до масиву d1, а потім виводить змінений масив (showArr) у .out-2</p>
+            <button class="button-primary b-2">Task-2</button>
+            <div class="out-2"></div>
+        </section>
+
+        <section>
+            <p><b>Task 3.</b></p>
+            <p>Напишіть функцію f3, яка застосовує метод shift до масиву d1, а потім виводить його (showArr) у .out-3
+            </p>
+            <button class="button-primary b-3">Task-3</button>
+            <div class="out-3"></div>
+        </section>
+
+        <section>
+            <p><b>Task 4.</b></p>
+            <p>Напишіть функцію f4, яка застосовує метод push до масиву d1, дані для масиву беріть з i-4, а потім виводить його (showArr) у .out-4</p>
+            <div class="form-control">push <input type="text" class="i-4"></div>
+            <button class="button-primary b-4">Task-4</button>
+            <div class="out-4"></div>
+        </section>
+
+        <section>
+            <p><b>Task 5.</b></p>
+            <p>Напишіть функцію f5, яка застосовує метод unshift до масиву d1, дані для масиву беріть з i-5, а потім виводить його (showArr) у .out-5</p>
+            <div class="form-control">unshift <input type="text" class="i-5"></div>
+            <button class="button-primary b-5">Task-5</button>
+            <div class="out-5"></div>
+        </section>
+
+        <section>
+            <p><b>Task 6.</b></p>
+            <p>Напишіть функцію f6, яка емулює роботу методу push стосовно масиву d6. Тобто. додає значення з i-6 як останній елемент масив d6. Емуляція означає, що ми отримаємо результат аналогічний методу push без застосування його. Емуляція полягає у присвоєння значення як останнього елемента масиву. Як обчислити індекс останнього елемента, використовуючи довжину масиву - ви знаєте з попереднього уроку. Повторний запуск функції повинен також призводити до додавання елемента.</p>
+            <pre>d6 = ['test', 5, 12];</pre>
+            <div class="form-control">Эмулируем push <input type="text" class="i-6"></div>
+            <button class="button-primary b-6">Task-6</button>
+            <div class="out-6"></div>
+        </section>
+
+        <section>
+            <p><b>Task 7.</b></p>
+            <p>Напишіть функцію f7, яка емулює метод pop, тобто. видаляє останній елемент масиву d7. Емулювати – отримувати результат аналогічний pop, але без застосування pop. Функція може бути викликана багато разів, при цьому щоразу повинен видалятися останній елемент d7.</p>
+            <pre>
+            d7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
+        </pre>
+            <button class="button-primary b-7">Task-7</button>
+            <div class="out-7"></div>
+        </section>
+
+        <section>
+            <p><b>Task 8.</b></p>
+            <p>Напишіть функцію f8, яка емулює роботу методу unShift - додаємо значення з i-8 на початок масиву d8.</p>
+            <pre>
+             d8 = [2,'4', 12, 67, 'hello'];
+        </pre>
+            <div class="form-control">Эмулируем unshift <input type="text" class="i-8"></div>
+
+            <button class="button-primary b-8">Task-8</button>
+            <div class="out-8"></div>
+            <div class="out-8-1"></div>
+        </section>
+
+        <section>
+            <p><b>Task 9.</b></p>
+            <p>Напишіть функцію f8, яка емулює роботу методу shift – на прикладі масиву d9.</p>
+            <pre>
+            d9 = [100, 200, 300, 400, 700, 121];
+        </pre>
+            <button class="button-primary b-9">Task-9</button>
+            <div class="out-9"></div>
+        </section>
+
+        <section>
+            <p><b>Task 10.</b></p>
+            <p>Напишіть функцію f10, яка застосовує до масиву d10 метод reverse та виводить отриманий масив у out-10
+            </p>
+            <pre>d10 = [3,14,15,92,6];</pre>
+            <button class="button-primary b-10">Task-10</button>
+            <div class="out-10"></div>
+        </section>
+
+        <section>
+            <p><b>Task 11.</b></p>
+            <p>Напишіть функцію, яка отримує число з Input i-11, переводить до числа, і за допомогою методу indexOf перевіряє наявність у масиві d11. Функція виводить в out-11 -1 якщо такого числа немає в масиві або його індекс в масиві.
+            </p>
+            <pre>d11 = [2,3,4,5,6,7];</pre>
+            <div class="form-control">indexOf <input type="text" class="i-11"></div>
+
+            <button class="button-primary b-11">Task-11</button>
+            <div class="out-11"></div>
+        </section>
+
+        <section>
+            <p><b>Task 12.</b></p>
+            <p>Напишіть функцію f12, яка емулює роботу методу indexOf - шукає введене число масиві d12 (перебором). Якщо числа немає – виводить –1, якщо є – його позицію в масиві.</p>
+            <pre>d12 = [6, 62, 60, 70, 1, 5]</pre>
+            <div class="form-control">indexOf эмуляция<input type="text" class="i-12"></div>
+
+            <button class="button-primary b-12">Task-12</button>
+            <div class="out-12"></div>
+        </section>
+
+        <section>
+            <p><b>Task 13.</b></p>
+            <p>Напишіть функцію f13, яка емулює роботу методу reverse. Тобто. створює новий масив на основі d13 зі зворотним порядком елементів та виводить у out-13.</p>
+            <pre> d13 = [6, 0, 22, 1, 4, 76]</pre>
+            <button class="button-primary b-13">Task-13</button>
+            <div class="out-13"></div>
+        </section>
+
+        <section>
+            <p><b>Task 14.</b></p>
+            <p>Напишіть функцію, яка отримує i-14, переводить до числа, а потім заповнює масив d14 так, що кількість елементів дорівнює введеному числу, і кожен елемент дорівнює 1. Тобто. Користувач ввів 5, масив буде [1,1,1,1,1]. Виведіть масив у out-14. </p>
+            <pre>d14 = [];</pre>
+            <div class="form-control">заполняем массив<input type="text" class="i-14"></div>
+            <button class="button-primary b-14">Task-14</button>
+            <div class="out-14"></div>
+        </section>
+
+        <section>
+            <p><b>Task 15.</b></p>
+            <p>Напишіть функцію f15, яка спочатку перевіряє, чи є елемент з i-15 в масиві d15 (перетворюємо на число), а потім – якщо ні – додає його до масиву.</p>
+            <div class="form-control">заполняем массив<input type="text" class="i-15"></div>
+
+            <pre>d15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];</pre>
+            <button class="button-primary b-15">Task-15</button>
+            <div class="out-15"></div>
+        </section>
+
+        <section>
+            <p><b>Task 16.</b></p>
+            <p>Дано два масиви d161 і d162 - використовуючи метод concat - додайте в масив d16 результат застосування concat між масивом d161 і d162.</p>
+            <pre>
+let d16 = [];
+let d161 = [5,6,7,8,9];
+let d162 = [23,24,56,87];
+        </pre>
+            <button class="button-primary b-16">Task-16</button>
+            <div class="out-16"></div>
+        </section>
+
+        <section>
+            <p><b>Task 17.</b></p>
+            <p>Напишіть функцію f17, яка емулює роботу методу concat. Функція повинна об'єднувати масиви d171 та d172 та записувати результат у d17. Для емуляції використовуйте цикл.</p>
+            <pre>
+d17=[];
+d171=['a', 'b', 'c', 'd'];
+d172=[1,2,3,4,5];
+        </pre>
+            <button class="button-primary b-17">Task-17</button>
+            <div class="out-17"></div>
+        </section>
+
+        <section>
+            <p><b>Task 18.</b></p>
+            <p>Напишіть функцію f18, яка отримує значення з i-18 і перевіряє чи є таке значення масиві d18 з використанням методу includes. Результат застосування методу – виводиться у .out-18.</p>
+            <pre>d18 = ['b', 'c', '45', 'e', 'z', 'y'];</pre>
+            <div class="form-control">заполняем массив<input type="text" class="i-18"></div>
+            <button class="button-primary b-18">Task-18</button>
+            <div class="out-18"></div>
+        </section>
+
+        <section>
+            <p><b>Task 19.</b></p>
+            <p>Напишіть функцію f19, яка виводить найдовший рядок maxString з масиву d19 в out-19.</p>
+            <pre>d19 = ['Your','payment','method','will','automatically','be','charged','in','advance','every' ];</pre>
+            <button class="button-primary b-19">Task-19</button>
+            <div class="out-19"></div>
+        </section>
+
+        <section>
+            <p><b>Task 20.</b></p>
+            <p>Напишіть функцію f20, яка застосовує до масиву d20 метод join із параметрами та з'єднує елементи масиву в один рядок. Результат виводить у .out-20. Вкажіть мето так d20.join(''). Зверніть увагу - між апострофами немає пропуска!!!!.</p>
+            <pre> d20 = [4,5,6,7,8,9,10]</pre>
+            <button class="button-primary b-20">Task-20</button>
+            <div class="out-20"></div>
+        </section>
+
+
+
+    </div>
+
+    <script src="unit_11.js"></script>
+</body>
+
+</html>
