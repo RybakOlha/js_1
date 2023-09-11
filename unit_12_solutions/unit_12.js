@@ -226,10 +226,10 @@ function f13() {
     for (let i = 0; i < size; i++) {
         chessboard[i] = [];
         for (let j = 0; j < size; j++) {
-            if ((i + j) % 2 === 0) {
-                chessboard[i][j] = 'white';
+            if ((i + j) % 2 == 0) {
+                chessboard[i][j] = 0;
             } else {
-                chessboard[i][j] = 'black';
+                chessboard[i][j] = 1;
             }
         }
     }
