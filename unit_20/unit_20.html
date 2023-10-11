@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="shortcut icon" href="https://cabinet.itgid.info/favicon.svg" type="image/x-icon">
+    <title>Unit 20</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unit 20. Події клавіатури</h1>
+
+        <section>
+            <p><b>Task 1.</b></p>
+            <p>Даний input .i-1. Напишіть функцію t1, яка виводить на сторінку true якщо введено символ і false якщо цифра. Для визначення – використовуйте keyCode. </p>
+            <input type="text" class="i-1">
+            <div class="out-1">
+            </div>
+        </section>
+
+        
+        <section>
+            <p><b>Task 2.</b></p>
+            <p>Дано input .i-2 та блок .block-2. Додайте подію на input, при натисканні клавіш стрілка вправо і вліво стрілка збільшувати/зменшувати ширину блоку. Клавіші стрілка вгору і вниз – збільшувати/зменшувати висоту блоку. Одне натискання клавіші - 1px.</p>
+            <div>
+                <input type="text" class="i-2">
+                <div class="div-2 block-2">
+                </div>
+        </section>
+
+
+        <section>
+            <p><b>Проєкт.</b></p>
+            <p> 1. Вивчіть верстку клавіатури.</p>
+            <p> 2. При введенні символу в i-3 (латиниця, нижній регістр) - клавіші з таким символом призначте клас .active. Це пофарбує клавішу помаранчевим фоном. Перед пошуком та присвоєнням active, за допомогою циклу видаліть клас active у всіх клавіш із класом keyboard.</p>
+            <p>3. Якщо все зроблено правильно, то при введенні наступного символу попередня клавіша втратить помаранчевий фон, а нова введена зафарбується.</p>
+            <p>4. Самостійно додайте всі цифри та другий ряд клавіш від a до l</p>
+            <p>5. Додайте самостійно клавішу alt, enter.</p>
+
+            <div>
+
+                <input type="text" class="i-3">
+                <div class="out-3">
+                    <div class="keyboard" data="q">q</div>
+                    <div class="keyboard" data="w">w</div>
+                    <div class="keyboard" data="e">e</div>
+                    <div class="keyboard" data="r">r</div>
+                    <div class="keyboard" data="1">1</div>
+                    <div class="keyboard" data="2">2</div>
+                    <div class="keyboard" data="3">3</div>
+                    <div class="keyboard" data="space">space</div>
+                    <div class="keyboard" data="ctrl">ctrl</div>
+                </div>
+        </section>
+
+
+    </div>
+    
+    <script src="unit_20.js"></script>
+</body>
+
+</html>
